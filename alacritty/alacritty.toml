@@ -1,0 +1,22 @@
+import = [ "~/.config/alacritty/themes/catppuccin_latte.toml" ]
+
+[env]
+TERM = "xterm-256color"
+
+[cursor]
+style = { shape = "Underline", blinking = "Always" }
+unfocused_hollow = false
+blink_interval = 1000
+blink_timeout = 0
+
+[window]
+padding.x = 48
+padding.y = 48
+
+decorations = "Buttonless"
+decorations_theme_variant = "Light"
+resize_increments = true
+
+[font]
+normal.family = "MesloLGS Nerd Font"
+size = 13
