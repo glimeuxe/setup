@@ -1,4 +1,5 @@
 - alacritty -> ~/.config/alacritty
+- Dock -> ~/Library/Preferences
 - librewolf -> default about:profiles profile folder
 - vscodium -> default settings.json folder
 - zsh -> ~
