@@ -1,0 +1,50 @@
+#!/bin/bash
+
+source "$CONFIG_DIR/colors.sh"
+
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+ITEM_DIR="$CONFIG_DIR/items"
+
+##### Bar Appearance #####
+
+sketchybar --bar position=top height=30 blur_radius=80 color=$BAR_COLOR # height=24 blur_radius=30
+
+##### Defaults #####
+
+default=(
+	padding_left=0
+	padding_right=0
+	icon.font="Symbols Nerd Font:Regular:10"
+	label.font="SF Pro:Medium:10"
+	icon.color=$ACCENT_COLOR
+	label.color=$ACCENT_COLOR
+	icon.padding_left=9 # spacing between module label and module left edge
+	icon.padding_right=3 # half-spacing between module label and module icon
+	label.padding_left=3 # half-spacing between module label and module icon
+	label.padding_right=9 # spacing between module label and module right edge
+	background.padding_left=5 # half-spacing between modules
+	background.padding_right=5 # half-spacing between modules
+	background.color=$ITEM_BG_COLOR
+	background.corner_radius=9
+	background.height=18
+)
+sketchybar --default "${default[@]}"
+
+##### Mission Control Space Indicators #####
+
+source $ITEM_DIR/front_app.sh
+source $ITEM_DIR/calendar.sh
+# source $ITEM_DIR/volume.sh
+# source $ITEM_DIR/cpu.sh
+source $ITEM_DIR/battery.sh
+
+# sketchybar --add item clock center \
+#            --set clock update_freq=1 icon=  script="$PLUGIN_DIR/clock.sh" \
+#             --add item volume right \
+#             --set volume script="$PLUGIN_DIR/volume.sh" \
+#             --subscribe volume volume_change \
+#             --add item battery right \
+#             --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
+#             --subscribe battery system_woke power_source_change
+
+sketchybar --update
