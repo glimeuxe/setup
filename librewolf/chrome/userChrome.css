@@ -416,7 +416,7 @@ textarea {
 	#urlbar:hover &,
 	&[open] {
 		opacity: 1;
-		margin-inline-start: -5px;
+		margin-inline-start: -6px;
 	}
 }
 
