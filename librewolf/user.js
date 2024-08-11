@@ -74,8 +74,11 @@
  * after startup for any warnings/error messages related to non-applied prefs
  * [1] https://blog.mozilla.org/nnethercote/2018/03/09/a-new-preferences-parser-for-firefox/ ***/
 
-/* 0000: disable about:config warning ***/
+/* 0000: disable about:config warning and set custom UX ***/
 user_pref("browser.aboutConfig.showWarning", false);
+user_pref("browser.tabs.tabmanager.enabled", false);
+user_pref("browser.tabs.allowTabDetach", false);
+user_pref("browser.link.open_newwindow.override.external", 3)
 
 /*** [SECTION 0100]: STARTUP ***/
 /* 0102: set startup page [SETUP-CHROME]
@@ -790,7 +793,7 @@ user_pref("privacy.resistFingerprinting.pbmode", true); // [FF114+]
  * [SETUP-CHROME] sizes round down in hundreds: width to 200s and height to 100s, to fit your screen
  * [1] https://bugzilla.mozilla.org/1330882 ***/
 user_pref("privacy.window.maxInnerWidth", 640);
-user_pref("privacy.window.maxInnerHeight", 360);
+user_pref("privacy.window.maxInnerHeight", 480);
 /* 4503: disable mozAddonManager Web API [FF57+]
  * [NOTE] To allow extensions to work on AMO, you also need 2662
  * [1] https://bugzilla.mozilla.org/buglist.cgi?bug_id=1384330,1406795,1415644,1453988 ***/
