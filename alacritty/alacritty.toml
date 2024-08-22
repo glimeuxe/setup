@@ -6,7 +6,7 @@ TERM = "xterm-256color"
 [cursor]
 style = { shape = "Underline", blinking = "Always" }
 unfocused_hollow = false
-blink_interval = 1000
+blink_interval = 500
 blink_timeout = 0
 
 [window]
