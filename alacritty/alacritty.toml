@@ -18,5 +18,6 @@ decorations_theme_variant = "Light"
 resize_increments = true
 
 [font]
-normal.family = "MesloLGS Nerd Font"
-size = 13
+normal.family = "MesloLGS NF"
+size = 12
+offset.y = 8
