@@ -1,0 +1,33 @@
+/* Custom */
+/* #nav-bar {
+	padding: 12px 0 11px 88px !important;
+} */
+
+#PersonalToolbar {
+	padding: 3px !important;
+}
+
+#urlbar[focused]>.urlbar-input-container,
+#searchbar:focus-within,
+#search-box[focused],
+search-textbox[focused],
+.findbar-textbox:focus,
+[type="text"]:focus-visible {
+	outline: 2px solid var(--neptune-focused-urlbar-border-color) !important;
+}
+
+/* #urlbar,
+#searchbar {
+	font-size: 12px !important;
+} */
+
+#searchbar,
+.urlbar-input-container {
+	padding-left: 2px !important;
+	padding-right: 2px !important;
+}
+
+#tabbrowser-tabs {
+	padding-left: 2px !important;
+	padding-right: 2px !important;
+}
