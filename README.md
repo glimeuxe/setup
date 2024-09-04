@@ -1,5 +1,4 @@
 - alacritty -> ~/.config/alacritty
-- librewolf -> default about:profiles profile directory
 - sketchybar -> ~/.config/sketchybar
 - vscodium -> settings.json directory
 - zsh -> ~
