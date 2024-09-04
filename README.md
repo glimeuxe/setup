@@ -2,5 +2,5 @@
 - Preferences -> ~/Library/Preferences
 - librewolf -> default about:profiles profile folder
 - sketchybar -> ~/.config/sketchybar
-- vscodium -> default settings.json folder
+- vscodium -> settings.json directory
 - zsh -> ~
