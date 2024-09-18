@@ -1,5 +1,9 @@
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+export PATH=~/git-scripts/:$PATH
+export PATH=/usr/local:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
 export PATH=/usr/local/Cellar/:/opt/homebrew/bin:/opt/homebrew/Cellar/:$PATH
+export PATH=~/.npm-global/bin:$PATH
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
 	source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -20,4 +24,4 @@ fi
 unset __conda_setup
 
 eval "$(zoxide init zsh)"
-alias ls="eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias l="eza --color=always --grid --no-filesize --no-time --no-user --no-permissions"
